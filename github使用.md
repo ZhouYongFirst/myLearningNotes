@@ -45,3 +45,22 @@ git config --list
 4. 使用```git status```查看文件状态
 5. 使用```git add filename```将文件更新到暂存区
 6. 使用```git commit -m "版本信息"```将更新保存到版本库
+
+
+# 五、管理远程仓库
+1. 添加远程仓库：```git remote add```
+```
+git remote add origin git@github.com:username/repository.git
+```
+2. 修改远程仓库的URL：```git remote set-url```
+```
+git remote set-url origin git@github.com:username/repository.git
+```
+3. 重命名远程仓库：```git remote rename```
+```
+git remote rename origin new
+```
+4. 删除远程仓库：```git remote rm```
+```
+git remote rm origin
+```
