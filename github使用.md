@@ -64,3 +64,29 @@ git remote rename origin new
 ```
 git remote rm origin
 ```
+5. 详细显示远程仓库信息
+```
+git remote -v
+```
+6. 克隆远程仓库：```git clone```
+```
+git clone git@github.com:username/repository.git
+```
+7. 推送本地更新到远程仓库：```git push```
+```
+git push origin master  --将本地仓库的master分支推送到远程仓库origin
+```
+8. 提取远程或本地分支，并合并到指定分支：```git pull 远程仓库名 远程分支名:本地分支名```
+```
+git pull origin master:master  --将origin的master分支提取并合并到本地master分支
+```
+9. 提取分支：```git fetch```
+```
+git fetch origin master  --提取origin的master分支到本地origin/master分支
+git fetch origin master:temp  --提取origin的master分支到本地新建的temp分支
+```
+10. 合并分支：```git merge```
+```
+git merge origin/master  --将本地origin/master分支与当前分支合并
+git merge temp  --将本地temp分支与当前分支合并
+```
