@@ -29,7 +29,7 @@ systemctl start sendmail.service
 
 （6）测试邮件能否正常发送：
 ```
-echo "test" | mail -s "test" zhouyong_my@163.com
+echo "testmail" | mail -s "test" test@example.com   //test为邮件主题，test@example.com为收件人邮箱，前面的为邮件内容
 ```
 
 <font color="#cc0000">注意事项:</font>   
