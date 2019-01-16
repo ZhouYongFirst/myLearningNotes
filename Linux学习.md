@@ -1,34 +1,34 @@
 ## 1. sendmail安装及配置
 （1）检查是否安装了sendmail：
-```
+```bash
 rpm -qa | grep sendmail
 ```
 
 （2）若已安装，执行下一步；若未安装，则：
-```
+```bash
 yum install sendmail
 ```
 
 （3）修改配置文件：
-```
+```bash
 vim /etc/mail/sendmail.mc    //修改sendmail配置文件模板
 ```
 将```DAEMON_OPTIONS(`Port=smtp, Addr=127.0.0.1, Name=MTA')dnl```中的127.0.0.1改为0.0.0.0意思是任何主机都可以访问sendmail服务。
 
 （4）生成配置文件：
-```
+```bash
 m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf
 ```
 若系统无法识别m4命令，安装sendmail-cf软件包：`yum install sendmail-cf`;  
 生成配置文件前可以对原配置文件做备份：`mv sendmail.cf sendmail.cf.old`。
 
 （5）启动sendmail服务：
-```
+```bash
 systemctl start sendmail.service
 ```
 
 （6）测试邮件能否正常发送：
-```
+```bash
 echo "testmail" | mail -s "test" test@example.com   //test为邮件主题，test@example.com为收件人邮箱，前面的为邮件内容
 ```
 
@@ -37,11 +37,11 @@ echo "testmail" | mail -s "test" test@example.com   //test为邮件主题，test
 
 使用外部smtp服务器发送邮件：
 - 修改文件/etc/mail.rc:
-```
+```bash
 vim /etc/mail.rc
 ```
 设置如下：
-```
+```bash
 set from=test@example.com
 set smtp=smtp.example.com
 set smtp-auth-user=username
