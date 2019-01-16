@@ -19,7 +19,7 @@ vim /etc/mail/sendmail.mc    //修改sendmail配置文件模板
 ```
 m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf
 ```
-若系统无法识别m4命令，安装sendmail-cf软件包：`yum install sendmail-cf`;
+若系统无法识别m4命令，安装sendmail-cf软件包：`yum install sendmail-cf`;  
 生成配置文件前可以对原配置文件做备份：`mv sendmail.cf sendmail.cf.old`。
 
 （5）启动sendmail服务：
