@@ -42,14 +42,14 @@ vim /etc/mail.rc
 ```
 设置如下：
 ```
-set from=zhouyong_my@163.com
-set smtp=smtp.163.com
+set from=test@example.com
+set smtp=smtp.example.com
 set smtp-auth-user=username
 set smtp-auth-password=password
 set smtp-auth=login
 ```
 from表示发送的邮件地址；  
 smtp是外部smtp服务器的地址；  
-smtp-auth-user是外部smtp服务器认证的用户名；  
+smtp-auth-user是外部smtp服务器认证的用户名（邮箱账号）；  
 smtp-auth-password是外部smtp服务器的客户端授权码；  
 smtp-auth是邮件认证方式。
