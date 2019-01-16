@@ -13,7 +13,7 @@ yum install sendmail
 ```
 vim /etc/mail/sendmail.mc    //修改sendmail配置文件模板
 ```
-将```DAEMON_OPTIONS(`Port=smtp,Addr=127.0.0.1, Name=MTA')dnl```中的127.0.0.1改为0.0.0.0意思是任何主机都可以访问sendmail服务。
+将```DAEMON_OPTIONS(`Port=smtp, Addr=127.0.0.1, Name=MTA')dnl```中的127.0.0.1改为0.0.0.0意思是任何主机都可以访问sendmail服务。
 
 （4）生成配置文件：
 ```
