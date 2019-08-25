@@ -101,3 +101,4 @@ git branch  --列出本地分支
 git branch -r  --列出远程分支
 git branch -a  --列出所有分支
 ```
+2. 查看分支详细信息：`git show-branch`
