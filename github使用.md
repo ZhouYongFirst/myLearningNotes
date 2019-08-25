@@ -95,3 +95,9 @@ git merge temp  --将本地temp分支与当前分支合并
 # 六、提交
 
 # 七、分支管理
+1. 列出分支：`git branch`
+```
+git branch  --列出本地分支
+git branch -r  --列出远程分支
+git branch -a  --列出所有分支
+```
