@@ -90,3 +90,8 @@ git fetch origin master:temp  --提取origin的master分支到本地新建的tem
 git merge origin/master  --将本地origin/master分支与当前分支合并
 git merge temp  --将本地temp分支与当前分支合并
 ```
+# 五、添加、删除文件
+
+# 六、提交
+
+# 七、分支管理
