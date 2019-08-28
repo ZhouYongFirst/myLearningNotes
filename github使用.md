@@ -90,3 +90,35 @@ git fetch origin master:temp  --提取origin的master分支到本地新建的tem
 git merge origin/master  --将本地origin/master分支与当前分支合并
 git merge temp  --将本地temp分支与当前分支合并
 ```
+# 五、添加、删除文件
+
+# 六、提交
+
+# 七、分支管理
+1. 创建分支：`git branch 新分支名`
+```
+git branch dev  --创建dev分支
+```
+
+2. 列出分支：`git branch`
+```
+git branch  --列出本地分支
+git branch -r  --列出远程分支
+git branch -a  --列出所有分支
+```
+3. 查看分支详细信息：`git show-branch`
+
+4. 检出分支：`git checkout 分支名`
+```
+git checkout dev  --切换到dev分支
+```
+
+5. 创建并检出分支：`git checkout -b 新分支名`
+```
+git checkout -b dev  --创建并检出分支dev
+```
+
+6. 删除分支：`git branch -d 分支名`
+```
+git branch -d dev  --删除dev分支
+```
